@@ -81,7 +81,7 @@ body, html {
 
     .header {
         font-size: 2rem;
-        font-size: $fw-600;
+        font-weight: $fw-600;
         line-height: 2.4rem;
         margin-bottom: 1.6rem;
     }
@@ -95,9 +95,22 @@ body, html {
     &--1 {
         background: $moderate-violet;
         grid-area: card--1;
+        position: relative;
 
         .avatar {
             border: 2px solid $light-violet;
+        }
+
+        > img {
+            width: 10.4rem;
+            height: 10.2rem;
+            position: absolute;
+            top: 0;
+            right: 8rem;
+        }
+
+        .header {
+            position: relative;
         }
     }
 

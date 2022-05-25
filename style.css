@@ -55,7 +55,7 @@ body, html {
 }
 .card .header {
   font-size: 2rem;
-  font-size: 600;
+  font-weight: 600;
   line-height: 2.4rem;
   margin-bottom: 1.6rem;
 }
@@ -67,9 +67,20 @@ body, html {
 .card--1 {
   background: hsl(263deg, 55%, 52%);
   grid-area: card--1;
+  position: relative;
 }
 .card--1 .avatar {
   border: 2px solid hsl(264deg, 82%, 70%);
+}
+.card--1 > img {
+  width: 10.4rem;
+  height: 10.2rem;
+  position: absolute;
+  top: 0;
+  right: 8rem;
+}
+.card--1 .header {
+  position: relative;
 }
 .card--2 {
   background: hsl(217deg, 19%, 35%);
