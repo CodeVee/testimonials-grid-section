@@ -1,5 +1,6 @@
 $white: hsl(0, 0%, 100%);
 $moderate-violet: hsl(263, 55%, 52%);
+$light-violet: hsla(264, 82%, 70%, 1);
 $very-dark-grayish-blue: hsl(217, 19%, 35%);
 $very-dark-blackish-blue: hsl(219, 29%, 14%);
 $light-gray: hsl(0, 0%, 81%);
@@ -58,6 +59,7 @@ body, html {
         height: 2.8rem;
         width: 2.8rem;
         margin-right: 1.7rem;
+        border-radius: 50%;
 
         img {
             width: 100%;
@@ -93,6 +95,10 @@ body, html {
     &--1 {
         background: $moderate-violet;
         grid-area: card--1;
+
+        .avatar {
+            border: 2px solid $light-violet;
+        }
     }
 
     &--2 {
@@ -112,6 +118,10 @@ body, html {
     &--4 {
         background: $very-dark-blackish-blue;
         grid-area: card--4;
+
+        .avatar {
+            border: 2px solid $moderate-violet;
+        }
     }
 
     &--5 {
