@@ -112,6 +112,10 @@ body, html {
         .header {
             position: relative;
         }
+
+        .text {
+            color: $light-gray;
+        }
     }
 
     &--2 {
@@ -148,6 +152,12 @@ body, html {
 
     &--3, &--5 {
         color: $very-dark-grayish-blue;
+    }
+
+    &--3, &--4, &--5 {
+        .header {
+            margin-bottom: 2.4rem;
+        }
     }
     
     &__profile {
@@ -207,6 +217,10 @@ body, html {
 
         &--3, &--4, &--5 {
             padding-bottom: 3.2rem;
+
+            .header {
+                margin-bottom: 1.6rem;
+            }
         }
     }
 }

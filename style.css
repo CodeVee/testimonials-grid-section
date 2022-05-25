@@ -82,6 +82,9 @@ body, html {
 .card--1 .header {
   position: relative;
 }
+.card--1 .text {
+  color: hsl(0deg, 0%, 81%);
+}
 .card--2 {
   background: hsl(217deg, 19%, 35%);
   grid-area: card--2;
@@ -109,6 +112,9 @@ body, html {
 }
 .card--3, .card--5 {
   color: hsl(217deg, 19%, 35%);
+}
+.card--3 .header, .card--4 .header, .card--5 .header {
+  margin-bottom: 2.4rem;
 }
 .card__profile {
   display: flex;
@@ -152,6 +158,9 @@ body, html {
   }
   .card--3, .card--4, .card--5 {
     padding-bottom: 3.2rem;
+  }
+  .card--3 .header, .card--4 .header, .card--5 .header {
+    margin-bottom: 1.6rem;
   }
 }
 @media screen and (max-width: 400px) {
