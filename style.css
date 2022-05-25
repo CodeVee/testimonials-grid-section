@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.page {
+  background: hsl(210deg, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  height: 57.2rem;
+  width: 111rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25.5rem);
+  grid-template-rows: 28.2rem 26.6rem;
+  gap: 2.4rem 3rem;
+  grid-template-areas: "card--1 card--1 card--2 card--5" "card--3 card--4 card--4 card--5";
+}
+
+.card {
+  padding: 2.6rem 3.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.247378);
+  font-weight: 500;
+}
+.card .avatar {
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-right: 1.7rem;
+  border-radius: 50%;
+}
+.card .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card .name {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+.card .title {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  opacity: 0.5;
+}
+.card .header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.card .text {
+  opacity: 0.7;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.card--1 {
+  background: hsl(263deg, 55%, 52%);
+  grid-area: card--1;
+  position: relative;
+}
+.card--1 .avatar {
+  border: 2px solid hsl(264deg, 82%, 70%);
+}
+.card--1 > img {
+  width: 10.4rem;
+  height: 10.2rem;
+  position: absolute;
+  top: 0;
+  right: 8rem;
+}
+.card--1 .header {
+  position: relative;
+}
+.card--2 {
+  background: hsl(217deg, 19%, 35%);
+  grid-area: card--2;
+}
+.card--1, .card--2 {
+  padding-bottom: 3.2rem;
+}
+.card--3 {
+  background: hsl(0deg, 0%, 100%);
+  grid-area: card--3;
+}
+.card--4 {
+  background: hsl(219deg, 29%, 14%);
+  grid-area: card--4;
+}
+.card--4 .avatar {
+  border: 2px solid hsl(263deg, 55%, 52%);
+}
+.card--5 {
+  background: hsl(0deg, 0%, 100%);
+  grid-area: card--5;
+}
+.card--1, .card--2, .card--4 {
+  color: hsl(0deg, 0%, 100%);
+}
+.card--3, .card--5 {
+  color: hsl(217deg, 19%, 35%);
+}
+.card__profile {
+  display: flex;
+  margin-bottom: 1.8rem;
+}
+
+@media screen and (max-width: 1280px) {
+  body, html {
+    font-size: 8.89px;
+  }
+}
+@media screen and (max-width: 430px) {
+  body, html {
+    font-size: 11.04px;
+  }
+
+  .page {
+    height: auto;
+    display: block;
+    padding: 7.1rem 2.4rem;
+  }
+
+  .grid {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2.4rem 0;
+    grid-template-areas: "card--1" "card--2" "card--3" "card--4" "card--5";
+  }
+
+  .card--1 .header {
+    margin-bottom: 4rem;
+  }
+  .card--1 .text {
+    padding-right: 1.6rem;
+  }
+  .card--1 > img {
+    right: 2.4rem;
+  }
+  .card--3, .card--4, .card--5 {
+    padding-bottom: 3.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  body, html {
+    font-size: 10px;
+  }
+}
