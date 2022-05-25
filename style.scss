@@ -52,6 +52,44 @@ body, html {
     padding: 2.6rem 3.2rem;
     border-radius: .8rem;
     box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.247378);
+    font-weight: $fw-500;
+
+    .avatar {
+        height: 2.8rem;
+        width: 2.8rem;
+        margin-right: 1.7rem;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .name {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        margin-bottom: .4rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+        opacity: .5;
+    }
+
+    .header {
+        font-size: 2rem;
+        font-size: $fw-600;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .text {
+        opacity: .7;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
     &--1 {
         background: $moderate-violet;
         grid-area: card--1;
@@ -80,6 +118,22 @@ body, html {
         background: $white;
         grid-area: card--5;
     }
+
+    &--1, &--2, &--4 {
+        color: $white;
+    }
+
+    &--3, &--5 {
+        color: $very-dark-grayish-blue;
+    }
+    
+    &__profile {
+        display: flex;
+        margin-bottom: 1.8rem;
+    }
+
+    
+
 }
 
 @media screen and (max-width: $desktop) {

@@ -31,6 +31,37 @@ body, html {
   padding: 2.6rem 3.2rem;
   border-radius: 0.8rem;
   box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.247378);
+  font-weight: 500;
+}
+.card .avatar {
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-right: 1.7rem;
+}
+.card .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card .name {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+.card .title {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  opacity: 0.5;
+}
+.card .header {
+  font-size: 2rem;
+  font-size: 600;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.card .text {
+  opacity: 0.7;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 .card--1 {
   background: hsl(263deg, 55%, 52%);
@@ -54,6 +85,16 @@ body, html {
 .card--5 {
   background: hsl(0deg, 0%, 100%);
   grid-area: card--5;
+}
+.card--1, .card--2, .card--4 {
+  color: hsl(0deg, 0%, 100%);
+}
+.card--3, .card--5 {
+  color: hsl(217deg, 19%, 35%);
+}
+.card__profile {
+  display: flex;
+  margin-bottom: 1.8rem;
 }
 
 @media screen and (max-width: 1280px) {
