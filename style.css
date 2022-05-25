@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.page {
+  background: hsl(210deg, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  height: 57.2rem;
+  width: 111rem;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5rem);
+  grid-template-rows: 28.2rem 26.6rem;
+  gap: 2.4rem 3rem;
+  grid-template-areas: "card--1 card--1 card--2 card--3" "card--4 card--5 card--5 card--3";
+}
+
+@media screen and (max-width: 1280px) {
+  body, html {
+    font-size: 8.89px;
+  }
+}
+@media screen and (max-width: 430px) {
+  body, html {
+    font-size: 11.04px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body, html {
+    font-size: 10px;
+  }
+}
