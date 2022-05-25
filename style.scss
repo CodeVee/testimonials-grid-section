@@ -169,6 +169,46 @@ body, html {
     body, html {
         font-size: $fs-11s;
     }
+
+    .page {
+        height: auto;
+        display: block;
+        padding: 7.1rem 2.4rem;
+    }
+    
+    .grid {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 2.4rem 0;
+        grid-template-areas:
+            "card--1"
+            "card--2"
+            "card--3"
+            "card--4"
+            "card--5";
+    }
+    
+    .card {
+        &--1 {
+
+            .header {
+                margin-bottom: 4rem;
+            }
+            .text {
+                padding-right: 1.6rem;
+            }
+            > img {
+                right: 2.4rem;
+            }
+        }
+
+        &--3, &--4, &--5 {
+            padding-bottom: 3.2rem;
+        }
+    }
 }
 
 @media screen and (max-width: $mobile) {

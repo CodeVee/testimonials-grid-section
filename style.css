@@ -124,6 +124,35 @@ body, html {
   body, html {
     font-size: 11.04px;
   }
+
+  .page {
+    height: auto;
+    display: block;
+    padding: 7.1rem 2.4rem;
+  }
+
+  .grid {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2.4rem 0;
+    grid-template-areas: "card--1" "card--2" "card--3" "card--4" "card--5";
+  }
+
+  .card--1 .header {
+    margin-bottom: 4rem;
+  }
+  .card--1 .text {
+    padding-right: 1.6rem;
+  }
+  .card--1 > img {
+    right: 2.4rem;
+  }
+  .card--3, .card--4, .card--5 {
+    padding-bottom: 3.2rem;
+  }
 }
 @media screen and (max-width: 400px) {
   body, html {
