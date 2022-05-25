@@ -16,6 +16,9 @@ body, html {
   justify-content: center;
   align-items: center;
 }
+.page h1 {
+  display: none;
+}
 
 .grid {
   height: 57.2rem;
